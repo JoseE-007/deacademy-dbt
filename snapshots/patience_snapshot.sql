@@ -1,5 +1,6 @@
 {% snapshot patient_snapshot %}
 
+
 {{
     config
     (
@@ -9,6 +10,10 @@
     )
 }}
 
+
 select * from {{source('patient','PATIENT_SRC')}}
+
+
+
 
 {% endsnapshot %}
